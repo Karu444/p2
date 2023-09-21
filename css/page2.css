@@ -1,0 +1,105 @@
+:root {
+  --color-fondo: #5864a6;
+  --color-amarillo: #f2eeae;
+  --color-mostaza: #f2d335;
+  --color-letra-footer: #4449a6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10px 80% 10%;
+  background-color: #4449a6 !important;
+/*   background-color: rgb(255, 238, 0);
+  height: 100vh; */
+}
+
+.menu {
+background-color: #4449a6 !important;
+  /* height: 100vh; */
+  grid-row-start: 1/all;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+}
+
+.contenido {
+  height: auto;
+  grid-row-start: 2/2;
+  overflow: hidden;
+}
+
+.foter {
+  height: 100%;
+  
+}
+
+.buscador {
+  width: 50vw;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.contenido-card {
+  margin-top: 150px;
+  height: calc(100% - 100vh); 
+  display: flex;
+  gap: 15px;
+}
+
+.cards{
+  padding: 2rem;
+  background-color: #f2d335;
+  width: 16rem;
+  height: 25rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cards img{
+  object-fit: cover;
+  width: 14rem;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.butons{
+  display: flex;  
+  gap:10px;
+}
+
+
+.botones{
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  padding:auto;
+  width: 100px;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.cotenido{
+  justify-content: center;
+  display: flex;
+}
+
+a{
+  text-align: center;
+  text-decoration: none;
+}
+
+.tarjetas{
+  display: flex;
+}

@@ -1,0 +1,105 @@
+:root {
+  --color-fondo: #5864a6;
+  --color-amarillo: #f2eeae;
+  --color-mostaza: #f2d335;
+  --color-letra-footer: #4449a6;
+  --color-letra-contenido: #574373;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  background-color: var(--color-fondo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar h1 {
+  color: var(--color-mostaza);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  background-color: var(--color-amarillo);
+  border-radius: 50px;
+  height: 80vh;
+  width: 95vw;
+}
+
+.content .informacion {
+  grid-column: 1;
+  padding: 60px;
+  overflow: auto;
+  text-align: justify;
+}
+
+/* Scrollbar en general */
+.content .informacion::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Manija del Scrollbar */
+.content .informacion::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Fondo del Scrollbar */
+.content .informacion::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: transparent;
+}
+
+/* Hover de manija */
+.content .informacion::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.content .informacion p {
+  font-size: 1.8rem;
+  color: var(--color-letra-contenido);
+}
+
+.content .imagen {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .imagen .imagen-circular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+  width: 620px;
+  max-width: 80%;
+  max-height: 85%;
+  border-radius: 50%;
+  background-color: var(--color-mostaza);
+}
+
+.content .imagen .imagen-circular #personaje {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  background-color: var(--color-mostaza);
+  color: var(--color-letra-footer);
+  padding: 10px 0;
+  text-align: center;
+}
